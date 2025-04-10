@@ -1,0 +1,157 @@
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: #333;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  overflow: hidden;
+}
+
+.container {
+  width: 350px;
+}
+
+h1 {
+  text-align: center;
+  color: #ff6b82;
+  background-color: white;
+}
+.title-strike {
+  background-color: black;
+  height: 1px;
+  width: 60px;
+}
+.title {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.option-box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 15px;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.option-box input[type="radio"] {
+  margin-right: 0px;
+}
+
+.option-box .badge {
+  background-color: #ff6b82;
+  color: white;
+  font-size: 11px;
+  padding: 2px 6px;
+  margin-left: 5px;
+}
+
+.option-box .price {
+  float: right;
+  font-weight: bold;
+}
+
+.option-box .original-price {
+  float: right;
+  text-decoration: line-through;
+  color: #bbb;
+  font-size: 13px;
+  margin-left: 10px;
+}
+
+.option-box .description {
+  font-size: 13px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.option-box.most-popular {
+  border: 2px solid #ff6b82;
+}
+
+.option-box .tag {
+  position: absolute;
+  top: -9px;
+  right: 4px;
+  background-color: #ff6b82;
+  color: white;
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+.option-unit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.option-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.expanding-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.option-box.active .expanding-content {
+  max-height: 300px;
+  margin-top: 15px;
+}
+
+.variant {
+  display: flex;
+  gap: 10px;
+  margin: 8px 0;
+  align-items: center;
+}
+
+select {
+  padding: 5px;
+}
+
+.total-bill {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.free-delivery {
+  color: #ff6b82;
+}
+
+.add-to-cart {
+  width: 100%;
+  background-color: #ff6b82;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+footer {
+  text-align: right;
+  font-size: 12px;
+  margin-top: 10px;
+  color: gray;
+  font-style: italic;
+}
